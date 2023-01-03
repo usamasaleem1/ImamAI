@@ -43,7 +43,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <img src="/imam.png" className={styles.icon} />
-        <h3>Ask Imam AI</h3>
+        <h3>Ask ImamAI</h3>
         <p>Made by Usama</p>
         <p style={{
             paddingBottom: "30px",
