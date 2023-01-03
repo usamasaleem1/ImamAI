@@ -45,13 +45,15 @@ export default function Home() {
         <p>Made by Usama</p>
         <form onSubmit={onSubmit}>
           <input 
+          
             // make the form input a rounded rectangle
             style = {{
+              // add the webkit appearance to none and make it !important to override the default styling
+              webkitAppearance: "none !important",
               border: "1px solid transparent",
               //set the borderColor to a gradient
               boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
               borderRadius: "500px",
-
             }}
             type="text"
             name="animal"
