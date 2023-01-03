@@ -73,6 +73,7 @@
 
 .main .result {
     /* font-family: 'Segoe UI', sans-serif; */
+    text-align: center;
     font-weight: medium;
     margin-top: 40px;
     padding-left: 9vw;
