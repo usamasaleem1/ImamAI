@@ -54,6 +54,7 @@ export default function Home() {
               //set the borderColor to a gradient
               boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
               borderRadius: "500px",
+              WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
             }}
             type="text"
             name="animal"
