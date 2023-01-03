@@ -1,23 +1,35 @@
 import Head from "next/head";
 import { useState } from "react";
 import styles from "./index.module.css";
+import { useEffect } from "react";
+import LoadingIcon from "./loadingicon";
+
 
 export default function Home() {
-  const [animalInput, setAnimalInput] = useState("");
+  const [questionInput, setQuestionInput] = useState("");
   const [result, setResult] = useState();
+  const [loading, setLoading] = useState(false);
 
   async function onSubmit(event) {
+          setLoading(true);
     event.preventDefault();
     const response = await fetch("/api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ animal: animalInput }),
+      body: JSON.stringify({ animal: questionInput }),
     });
     const data = await response.json();
     setResult(data.result);
-    setAnimalInput("");
+    setQuestionInput("");
+    setLoading(false);
+
+  }
+  function onKeyDown(event) {
+    if (event.key === "Enter") {
+      onSubmit(event);
+    }
   }
 
   return (
@@ -31,16 +43,24 @@ export default function Home() {
         <img src="/imam.png" className={styles.icon} />
         <h3>Ask Imam AI</h3>
         <form onSubmit={onSubmit}>
-          <input
+          <input 
+            // make the form input a rounded rectangle
+            style = {{
+              border: "1px solid transparent",
+              //set the borderColor to a gradient
+              boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
+              borderRadius: "500px",
+
+            }}
             type="text"
             name="animal"
-            placeholder="Ask"
-            value={animalInput}
-            onChange={(e) => setAnimalInput(e.target.value)}
+            placeholder="Ask then press enter"
+            value={questionInput}
+                    onChange={(e) => setQuestionInput(e.target.value)}
+        onKeyDown={onKeyDown}
           />
-          <input type="submit" value="Get Answer" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div className={styles.result}>{loading ? <LoadingIcon /> : result}</div>
       </main>
     </div>
   );

@@ -11,15 +11,13 @@ export default async function(req, res) {
         temperature: 0.1,
         max_tokens: 500,
     });
-    res.status(200).json({ result: completion.data.choices[0].text });
+    res.status(200).json({ result: completion.data.choices[0].text, loading: false });
 }
 
 function generatePrompt(animal) {
     const question =
         animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-    return `Suggest three names for an animal that is a superhero.
-
-I am a highly intelligent question answering bot that knows a lot about Islam and the Quran. If you ask me a question that is rooted in truth, I will give you the answer along with it's proof with a snippet from the Quran and where it can be found. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with "Unknown".
+    return `I am a highly intelligent question answering bot that knows a lot about Islam and the Quran. If you ask me a question that is rooted in truth, I will give you the answer along with it's proof with a snippet from the Quran and where it can be found. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with "Unknown".
 
 Q: If im a Christian am I going to hell?
 A: No. Allah states that as long as you believe in him, whether its in a different religion, you will not need to worry. This is stated in Chapter 2, Verse 62: "Lo! Those who believe (in that which is revealed unto thee, Muhammad), and those who are Jews, and christians, and Sabaeans - whoever believeth in Allah and the Last Day and doeth right - surely their reward is with their Lord, and there shall no fear come upon them neither shall they grieve."
