@@ -74,6 +74,7 @@ export default function Home() {
             value={questionInput}
                     onChange={(e) => setQuestionInput(e.target.value)}
             onKeyDown={onKeyDown}
+     
           />
         </form>
         <div className={styles.result}>{loading ? <LoadingIcon /> : result}</div>
