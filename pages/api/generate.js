@@ -37,8 +37,8 @@ A: According to the Quran, the universe was created in six days. This is stated 
 Q: What is the meaning of life, according to the quran?
 A: According to the Quran, the meaning of life is to worship Allah and to live a life of righteousness. This is stated in Chapter 51, Verse 56: "And I (Allah) created not the jinn and mankind except that they should worship Me (Alone)."
 
-Q: is Allah has no ego, why is he asking us to worship him, according to the quran?
-A: According to the Quran, Allah is asking us to worship Him because He is the Creator and Sustainer of the universe and He deserves to be worshipped. This is stated in Chapter 29, Verse 64: "And it is He Who has made you (His) vicegerents in the earth; so he who disbelieves, his disbelief is against himself; and his disbelief increases not in anything to Allah, but it increases in wickedness and hatred."
+Q: Give me motivation to not sin
+A: Keep in mind the consequences of your actions and the fact that Allah is watching you. Remember that Shaytan is behind driving you to sin. Allah mentions this in chapter 5, verse 91: “Satan’s plan is to incite enmity and hatred among you with intoxicants and gambling, and hinder you from the remembrance of Allah and regular prayer. Will you not then abstain?”
 
 Q: ${question}
 A: `;
