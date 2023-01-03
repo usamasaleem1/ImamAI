@@ -42,6 +42,7 @@ export default function Home() {
       <main className={styles.main}>
         <img src="/imam.png" className={styles.icon} />
         <h3>Ask Imam AI</h3>
+        <p>Made by Usama</p>
         <form onSubmit={onSubmit}>
           <input 
             // make the form input a rounded rectangle
@@ -57,7 +58,7 @@ export default function Home() {
             placeholder="Ask then press enter"
             value={questionInput}
                     onChange={(e) => setQuestionInput(e.target.value)}
-        onKeyDown={onKeyDown}
+            onKeyDown={onKeyDown}
           />
         </form>
         <div className={styles.result}>{loading ? <LoadingIcon /> : result}</div>
