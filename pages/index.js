@@ -70,7 +70,7 @@ export default function Home() {
             }}
             type="text"
             name="animal"
-            placeholder="Ask then press enter"
+            placeholder="   Ask then press enter "
             value={questionInput}
                     onChange={(e) => setQuestionInput(e.target.value)}
             onKeyDown={onKeyDown}
