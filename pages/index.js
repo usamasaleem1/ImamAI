@@ -64,9 +64,10 @@ export default function Home() {
               WebkitAppearance: 'none',
               border: "1px solid transparent",
               //set the borderColor to a gradient
-              boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
+              boxShadow:" 20px 5px 50px #D077F3B3, 0px 5px 50px #0099FFAF, -20px 5px 50px #2ACFDBB9",
               borderRadius: "500px",
-              WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB !important",
+              marginTop : "1px",
+              // WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB !important",
             }}
             type="text"
             name="animal"
