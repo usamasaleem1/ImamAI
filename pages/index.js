@@ -51,12 +51,12 @@ export default function Home() {
             // make the form input a rounded rectangle
             style = {{
               // add the webkit appearance to none and make it !important to override the default styling
-              webkitAppearance: 'none',
+              WebkitAppearance: 'none',
               border: "1px solid transparent",
               //set the borderColor to a gradient
               boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
               borderRadius: "500px",
-              WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
+              WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB !important",
             }}
             type="text"
             name="animal"
