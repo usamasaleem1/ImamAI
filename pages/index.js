@@ -64,7 +64,7 @@ export default function Home() {
               WebkitAppearance: 'none',
               border: "1px solid transparent",
               //set the borderColor to a gradient
-              boxShadow:" 25px 4px 40px #F45DF9AC, 0px 4px 40px #0099FFA3, -25px 4px 40px #2ACFDBA5",
+              boxShadow:" 20px 4px 40px #F45DF9AC, 0px 4px 40px #0099FFA3, -20px 4px 40px #2ACFDBA5",
               borderRadius: "500px",
               marginTop : "1px",
               // WebkitBoxShadow: "20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB !important",
