@@ -3,6 +3,8 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import { useEffect } from "react";
 import LoadingIcon from "./loadingicon";
+import prefix from 'react-prefixer';
+
 
 
 export default function Home() {
@@ -49,7 +51,7 @@ export default function Home() {
             // make the form input a rounded rectangle
             style = {{
               // add the webkit appearance to none and make it !important to override the default styling
-              webkitAppearance: "none !important",
+              webkitAppearance: 'none',
               border: "1px solid transparent",
               //set the borderColor to a gradient
               boxShadow:" 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #2AC9DB",
