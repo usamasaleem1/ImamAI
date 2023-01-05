@@ -46,7 +46,7 @@ export default function Home() {
         <h3>Ask ImamAI</h3>
         <p style = {{
           fontSize : "11px",
-          paddingBottom: "30px",
+          paddingBottom: "40px",
         }}>Created by Usama</p>
         {/* <p style={{
             paddingBottom: "30px",
