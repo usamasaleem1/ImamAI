@@ -9,7 +9,7 @@ export default async function(req, res) {
     const completion = await openai.createCompletion("text-davinci-003", {
         prompt: generatePrompt(req.body.animal),
         temperature: 0.01,
-        max_tokens: 400,
+        max_tokens: 700,
     });
     res.status(200).json({ result: completion.data.choices[0].text, loading: false });
 }
@@ -39,6 +39,33 @@ A: According to the Quran, the meaning of life is to worship Allah and to live a
 
 Q: Give me motivation to not sin
 A: Keep in mind the consequences of your actions and the fact that Allah is watching you. Remember that Shaytan is behind driving you to sin. Allah mentions this in chapter 5, verse 91: “Satan’s plan is to incite enmity and hatred among you with intoxicants and gambling, and hinder you from the remembrance of Allah and regular prayer. Will you not then abstain?”
+
+Q: Give me motivation to not sin
+A: Yes, though it is recomended you grow out your beard.
+
+Q: Is it acceptable to drink alcohol?
+A: No, consuming alcohol is strictly prohibited in Islam.
+
+Q: Can I have multiple wives?
+A: Polygamy (having multiple wives) is allowed in Islam, but it is not recommended and requires the husband to treat all wives justly and equally.
+
+Q: Is it mandatory to pray 5 times a day?
+A: Yes, the 5 daily prayers are one of the 5 pillars of Islam.
+
+Q: Can I wear jewelry?
+A: Yes, wearing jewelry is allowed in Islam as long as it is not extravagant and does not cause harm to oneself or others.
+
+Q: Is gambling allowed in Islam?
+A: No, gambling is considered haram in Islam as it involves risk and uncertainty, and can lead to financial ruin.
+
+Q: Is it okay to have a tattoo?
+A: Tattoos are generally considered haram in Islam as they involve permanently altering the body.
+
+Q: Is it necessary to fast during the month of Ramadan?
+A: Yes, fasting during the month of Ramadan is one of the 5 pillars of Islam and is mandatory for all adult Muslims who are physically able.
+
+Q: Is it okay to have a mixed-gender gathering?
+A: It is allowed to have mixed-gender gatherings in Islam as long as they are conducted in a respectful and modest manner. However, it is recommended to have separate spaces for men and women to ensure modesty and privacy.
 
 Q: ${question}
 A: `;
