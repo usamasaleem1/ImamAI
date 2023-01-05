@@ -40,7 +40,7 @@ A: According to the Quran, the meaning of life is to worship Allah and to live a
 Q: Give me motivation to not sin
 A: Keep in mind the consequences of your actions and the fact that Allah is watching you. Remember that Shaytan is behind driving you to sin. Allah mentions this in chapter 5, verse 91: “Satan’s plan is to incite enmity and hatred among you with intoxicants and gambling, and hinder you from the remembrance of Allah and regular prayer. Will you not then abstain?”
 
-Q: Give me motivation to not sin
+Q: Can I shave my beard
 A: Yes, though it is recomended you grow out your beard.
 
 Q: Is it acceptable to drink alcohol?
