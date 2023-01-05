@@ -44,12 +44,16 @@ export default function Home() {
       <main className={styles.main}>
         <img src="/imam.png" className={styles.icon} />
         <h3>Ask ImamAI</h3>
-        <p>Made by Usama</p>
-        <p style={{
+        <p style = {{
+          fontSize : "11px",
+          paddingBottom: "30px",
+        }}>Created by Usama</p>
+        {/* <p style={{
             paddingBottom: "30px",
             fontSize : "12px",
           }
-            }>finna put zakir naik out of a job</p>
+            }>&lt;this was made in just few hours, so its not perfect&gt;</p> */}
+
 
         <form onSubmit={onSubmit}>
           <input 
